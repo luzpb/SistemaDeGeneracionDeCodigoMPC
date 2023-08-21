@@ -18,6 +18,7 @@ El control predictivo Model Predictive Control (MPC) se subdivide en diferentes 
 1.	Controlador MPC de Regulación: Este enfoque tiene como objetivo principal mantener el sistema en un estado deseado y estable a lo largo del tiempo. El controlador calcula las acciones de control de manera que las variables de estado converjan hacia valores específicos, logrando así la regulación precisa del sistema.
 2.	Controlador MPC de Tracking: En este caso, el controlador busca seguir una trayectoria o referencia predefinida en las variables de estado. El objetivo es que el sistema emulado siga una evolución deseada, adaptándose a cambios en la referencia mientras mantiene el sistema dentro de límites predefinidos.
 
+ ![image](https://github.com/luzpb/SistemaDeGeneracionDeCodigoMPC/assets/136500894/6ac14df5-4b77-4422-ae49-3d6a915fcf9d)
 
  
 
