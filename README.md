@@ -14,16 +14,9 @@ Los problemas de programación cuadrática abarcan diversos escenarios en funci�
 4.	*Problemas Cuadráticos de Minimización Sujetos a Restricciones de Igualdad y Restricciones Lineales de Desigualdad*: Esta categoría combina restricciones de igualdad y restricciones lineales de desigualdad. El propósito es minimizar la función cuadrática considerando estas restricciones mixtas.
 Cada tipo de problema de programación cuadrática presenta retos específicos y requiere enfoques de resolución adecuados. Un análisis detenido de las restricciones y la función objetivo facilita la selección de la formulación más idónea para afrontar el problema en cuestión. La comprensión de estas categorías provee una base sólida para desarrollar soluciones óptimas y eficientes en diversos dominios de aplicación.
 
- ![image](https://github.com/luzpb/SistemaDeGeneracionDeCodigoMPC/assets/136500894/6ac14df5-4b77-4422-ae49-3d6a915fcf9d)
-
 # Clasificación de Problemas de MPC
 El control predictivo Model Predictive Control (MPC) se subdivide en diferentes tipos según su objetivo. A continuación, se describen los dos tipos principales de controladores de MPC:
 1.	*Controlador MPC de Regulación*: Este enfoque tiene como objetivo principal mantener el sistema en un estado deseado y estable a lo largo del tiempo. El controlador calcula las acciones de control de manera que las variables de estado converjan hacia valores específicos, logrando así la regulación precisa del sistema.
 2.	*Controlador MPC de Tracking*: En este caso, el controlador busca seguir una trayectoria o referencia predefinida en las variables de estado. El objetivo es que el sistema emulado siga una evolución deseada, adaptándose a cambios en la referencia mientras mantiene el sistema dentro de límites predefinidos.
 
- ![image](https://github.com/luzpb/SistemaDeGeneracionDeCodigoMPC/assets/136500894/90ef8c51-6c9e-4d48-8494-0dd238977a81)
-
-
-
- 
 
