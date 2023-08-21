@@ -116,5 +116,5 @@ elif target_language == "micropython":
     print("\nPlantilla de comprobacion exportado correctamente (Controlador.py).")
     print("Matrices a exportar en wowki (mpc_qp_matrices.py).")
         
-## Archivo solo con la primera u
+
     
