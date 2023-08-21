@@ -1,8 +1,11 @@
 # Sistema de generación de código para la implementación de algoritmos de control predictivos en sistema embebidos de tiempo real
 
 La implementación exitosa de algoritmos de control predictivo en sistemas embebidos requiere una etapa crucial: la generación de código eficiente y específico para la plataforma. Este proceso se logra mediante el empleo de un generador de código automático, cuyo papel es transformar la lógica de alto nivel en código ejecutable, adaptado a las particularidades del sistema embebido.
+
 El generador de código presentado en el anexo se ha diseñado con el propósito de facilitar esta transformación. Este código base utiliza la biblioteca "jinja2" y opera mediante una serie de interacciones con el usuario para determinar aspectos clave del proceso de generación de código, como el lenguaje de destino (Python o MicroPython) y el tipo de problema (QP o MPC).
+
 El generador de código hace uso de un archivo llamado "Datos" que contiene los parámetros y variables necesarios para la implementación de los algoritmos de control predictivo. La importación de este archivo mediante la instrucción [ import Datos] asegura que los valores relevantes sean fácilmente accesibles durante la generación del código.
+
 En el contexto del lenguaje de destino, el generador de código proporciona la opción de seleccionar entre diferentes librerías relevantes para el control predictivo, como "cvxpy" y "pyomo", según sea necesario. La interacción con el usuario permite configurar detalles específicos, como la presencia de restricciones y la elección de plantillas correspondientes.
 7.1 Problemas que aborda el sistema codificador
 
