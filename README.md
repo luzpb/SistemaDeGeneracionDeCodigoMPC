@@ -8,6 +8,9 @@ El generador de código hace uso de un archivo llamado "Datos" que contiene los 
 
 En el contexto del lenguaje de destino, el generador de código proporciona la opción de seleccionar entre diferentes librerías relevantes para el control predictivo, como "cvxpy" y "pyomo", según sea necesario. 
 
+<img width="465" alt="Captura de pantalla 2023-09-18 a las 9 20 22" src="https://github.com/luzpb/SistemaDeGeneracionDeCodigoMPC/assets/136500894/d6948787-2e24-47aa-ae45-13a27e4c24d8">
+
+
 # Clasificación de Problemas de Programación Cuadrática
 Los problemas de programación cuadrática abarcan diversos escenarios en función de las restricciones que los caracterizan. A continuación, se detallan los distintos tipos de problemas de programación cuadrática y sus características:
 1.	*Problemas Cuadráticos de Minimización sin Restricciones*: En esta categoría, se busca minimizar una función cuadrática en todo el espacio de variables posibles. No existen restricciones adicionales que limiten las variables de decisión.
