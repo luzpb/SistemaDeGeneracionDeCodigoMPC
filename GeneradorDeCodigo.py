@@ -44,7 +44,6 @@ if target_language == "python":
                 print( " \nControlador MPC Tracking. Resultados: ")
                 template = env.get_template("python_cvxpy_mpct.py")
                 rendered_template = template.render(A=Datos.A, B=Datos.B, x0=Datos.x0, N=Datos.N, Q=Datos.Q, R=Datos.R, P=Datos.P, xmax=Datos.xmax, xmin=Datos.xmin, umax=Datos.umax, umin=Datos.umin, xref=Datos.xref, uref=Datos.uref)
-
         else: 
             print("\nError: El problema de destino NO esta bien definido\n ")
                 
@@ -74,13 +73,19 @@ if target_language == "python":
         if target_problem == "MPC":
             template_loader = FileSystemLoader(searchpath="MPC")
             env = Environment(loader=template_loader)
+            print("\nElige el tipo de MPC: \n\t (1) Regulacion \n\t (2) Tracking")   
+            target_constraints = input("Ingrese el numero(1/2):")
+            if target_constraints == "1":
+                print( " \nControlador MPC Regulacion. Resultados: ")
+                template = env.get_template("python_pyomo_mpcr.py")
+                rendered_template = template.render(A=Datos.A, B=Datos.B, x0=Datos.x0, N=Datos.N, Q=Datos.Q, R=Datos.R, P=Datos.P,xmax=Datos.xmax,xmin=Datos.xmin,umax=Datos.umax,umin=Datos.umin)
             
-            ############################################################################ 
-            # AÑADIR PLANTILLAS DE PYOMO PARA MPC 
-            ############################################################################
-        
+            if target_constraints == "2":
+                print( " \nControlador MPC Tracking. Resultados: ")
+                template = env.get_template("python_pyomo_mpct.py")
+                rendered_template = template.render(A=Datos.A, B=Datos.B, x0=Datos.x0, N=Datos.N, Q=Datos.Q, R=Datos.R, P=Datos.P, xmax=Datos.xmax, xmin=Datos.xmin, umax=Datos.umax, umin=Datos.umin, xref=Datos.xref, uref=Datos.uref)
         else: 
-            print("\nError: El problema de destino NO esta bien definido\n ")       
+            print("\nError: El problema de destino NO esta bien definido\n ")     
     else:
         print("\nError: La librería de destino NO esta bien definido\n ")
             
@@ -99,15 +104,12 @@ elif target_language == "micropython":
             print( " \nControlador MPC Tracking. Resultados: ")
             template = env.get_template("micropython_mpct.py")
             rendered_template = template.render(A=Datos.A, B=Datos.B, x0=Datos.x0, N=Datos.N, Q=Datos.Q, R=Datos.R, P=Datos.P, xmax=Datos.xmax, xmin=Datos.xmin, umax=Datos.umax, umin=Datos.umin, xref=Datos.xref, uref=Datos.uref)
-
 else: 
     print("\nError: EL lenguaje de destino NO esta bien definido\n ")
 
-# Ejecutar el código generado
-exec(rendered_template)
+exec(rendered_template) # Ejecutar el código generado
 
-# Exportar el código generado a un archivo
-with open("Controlador.py", "w") as output_file:
+with open("Controlador.py", "w") as output_file: # Exportar el código generado a un archivo
     output_file.write(rendered_template)
     
 if target_language == "python":
@@ -115,6 +117,7 @@ if target_language == "python":
 elif target_language == "micropython":
     print("\nPlantilla de comprobacion exportado correctamente (Controlador.py).")
     print("Matrices a exportar en wowki (mpc_qp_matrices.py).")
+        
         
 
     
