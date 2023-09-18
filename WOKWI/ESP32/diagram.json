@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "author": "Luz Pacheco",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": -9.33,
+      "left": -52.67,
+      "attrs": { "env": "micropython-20220117-v1.18-ulab-4.3.2" }
+    }
+  ],
+  "connections": [ [ "esp:TX0", "$serialMonitor:RX", "", [] ], [ "esp:RX0", "$serialMonitor:TX", "", [] ] ]
+}
