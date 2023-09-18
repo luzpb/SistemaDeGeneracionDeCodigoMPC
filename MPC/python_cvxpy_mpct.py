@@ -62,7 +62,7 @@ constrlist += [x[:, 0] == x0[:, 0]]
 
 # Creación y resolución del problema de optimización del MPC
 prob = cp.Problem(cp.Minimize(costlist), constrlist)
-prob.solve()
+prob.solve(solver=cp.GUROBI)
 
 # Extracción de los valores óptimos de los estados y controles
 x_opt = np.array([x[:, t].value for t in range(N+1)]).T
