@@ -6,8 +6,7 @@ El generador de código presentado en el anexo se ha diseñado con el propósito
 
 El generador de código hace uso de un archivo llamado "Datos" que contiene los parámetros y variables necesarios para la implementación de los algoritmos de control predictivo. La importación de este archivo mediante la instrucción [ import Datos] asegura que los valores relevantes sean fácilmente accesibles durante la generación del código.
 
-En el contexto del lenguaje de destino, el generador de código proporciona la opción de seleccionar entre diferentes librerías relevantes para el control predictivo, como "cvxpy" y "pyomo", según sea necesario. La interacción con el usuario permite configurar detalles específicos, como la presencia de restricciones y la elección de plantillas correspondientes.
-7.1 Problemas que aborda el sistema codificador
+En el contexto del lenguaje de destino, el generador de código proporciona la opción de seleccionar entre diferentes librerías relevantes para el control predictivo, como "cvxpy" y "pyomo", según sea necesario. 
 
 # Clasificación de Problemas de Programación Cuadrática
 Los problemas de programación cuadrática abarcan diversos escenarios en función de las restricciones que los caracterizan. A continuación, se detallan los distintos tipos de problemas de programación cuadrática y sus características:
