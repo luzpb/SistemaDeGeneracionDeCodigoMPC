@@ -25,7 +25,7 @@ El control predictivo Model Predictive Control (MPC) se subdivide en diferentes 
 2.	*Controlador MPC de Tracking*: En este caso, el controlador busca seguir una trayectoria o referencia predefinida en las variables de estado. El objetivo es que el sistema emulado siga una evolución deseada, adaptándose a cambios en la referencia mientras mantiene el sistema dentro de límites predefinidos.
 
 # Wokwi 
-A la hora de  trabajar con esta plataforma[ enlace: https://wokwi.com/], debemos tener en cuenta que debemod cambiar el "attr" del digaram.josn a "attrs": { "env": "micropython-20220117-v1.18-ulab-4.3.2" }, para poder trabajar con ulab. 
+A la hora de  trabajar con esta plataforma[ enlace: https://wokwi.com/], debemos tener en cuenta que debemos cambiar el "attr" del digaram.josn a "attrs": { "env": "micropython-20220117-v1.18-ulab-4.3.2" }, para poder trabajar con ulab. 
 
 Para más información sobre micropython-ulab consulte: 
   - Book: https://micropython-ulab.readthedocs.io/en/latest/
